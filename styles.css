@@ -341,7 +341,10 @@ footer {
 
 @media screen and (max-width: 600px) {
     div.container-body {
+        display: flex;
         flex-direction: column; /* Stack sidebar and content vertically */
+        height: auto;
+        overflow: visible;
     }
     div.wrapper-sidebar {
         width: 100%; /* Full width for sidebar */
