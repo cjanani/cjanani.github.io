@@ -1,0 +1,366 @@
+/* styles.css */
+
+ body  {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    /* font-style: normal; */
+    /* font-style: bold; */
+    line-height: 1.6;
+    margin: 0px;
+    padding: 0;
+    background-color:#001F3F;
+}
+
+ .container-body {
+
+    display: flex; /* Flexbox layout to position sidebar and content side-by-side */
+    width: 100%; /* Ensure it spans the full width of the page */
+    height: 100vh; /* Full viewport height for consistent layout */
+    overflow: hidden;
+    background-color:#001F3F;
+    color: gray;
+}
+
+header {
+    background-color:#001F3F;
+    color: #F0F3F4;
+    text-align: start;
+}
+
+.wrapper-sidebar {
+    width: 500px; /* Fixed width for the sidebar */
+    position: fixed; /* Keep sidebar fixed on the left */
+    top: 20px;
+    left: 50px;
+    height: 100%; /* Ensure sidebar spans the full height */
+    padding: 20px;
+    box-shadow: 2px 0 5px #001F3F;
+}
+
+.wrapper-content 
+{ 
+    margin-left: 650px;/* Offset by the sidebar width */
+    margin-right: 50px;
+    flex-grow: 1; /* Take up remaining space */
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 100%; /* Full height to allow proper scrolling */
+    /* background-color: #fff; Optional: visual distinction */
+}
+
+.topnav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 400;
+    font-style: bold;
+    color: #F0F3F4;
+}
+
+.topnav a{
+        text-decoration: none;
+}
+
+.topnav a:hover{
+    color: #AEEEEE;
+    text-decoration: underline;
+    text-decoration-color: #007BFF;
+}
+
+.hero p{
+      color: gray;
+}
+/* nav ul li {
+    margin: 0;
+} */
+
+nav ul li a {
+    color: #F0F3F4;
+    text-decoration:#F0F3F4 underline;
+
+}
+
+h1
+{
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: bold;
+    background-color:#001F3F;
+    color: #F0F3F4;
+}
+
+h2, h3, h4, h5
+{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    background-color:#001F3F;
+    color: #F0F3F4;
+}
+
+section .about{
+    padding: 0 10px;
+    margin: 0 20px;
+    display: grid;
+    grid-column: auto;
+}
+
+.about a{
+    font-weight: 400;
+    font-style: bold;
+    color: #F0F3F4;
+    text-decoration: none;
+}
+
+.about a:hover{
+    color: #AEEEEE;
+}
+
+section .experience{
+    padding: 0 10px;
+    margin: 0 20px;
+    display: grid;
+    grid-column: auto;
+}
+
+ol{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.workpara header{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: small;
+    color: gray;
+    margin-top: 2px;
+}
+
+.workpara li{
+        margin: 0;
+        padding: 0;
+}
+
+.workpara li p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.8;
+    color: gray;
+
+}
+
+/* .workpara ol
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+} */
+.work-exp-header
+{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.work-exp-info h4
+{
+   padding: 0;
+   margin: 0;
+}
+
+.work-exp-info ul
+{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.8;
+    padding: 0;
+    color:#AEEEEE;
+    list-style-type: none;
+}
+
+.work-exp-info li
+{
+    display: inline-block;
+    padding: 4px 5px;
+    background-color: darkslategray; /* Button background color */
+    color: #AEEEEE; /* Text color */
+    border-radius: 12px; /* Rounded corners */
+    border: none; /* No border */
+    text-align: center; /* Center text */
+    font-size: 14px; /* Adjust font size */
+    font-weight: 400;
+    margin-left: 3px; /* Add space between buttons */
+    margin-right: 3px;
+    margin-bottom: 5px;
+
+    
+}
+
+section .projects{
+    padding: 0 10px;
+    margin: 0 20px;
+    display: grid;
+    grid-column: auto;
+}
+section .contact{
+    padding: 0 10px;
+    margin: 0 20px;
+    display: grid;
+    grid-column: auto;    
+}
+section .hero{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    margin-bottom: 1em;
+
+}
+
+div ul 
+{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+div li {
+    padding: 5px;
+    margin: 0;
+} 
+
+.hero-foot
+{
+    padding: 0 5px;
+}
+
+
+.project {
+    display: flex;
+    flex-direction: column;
+    background-color:#001F3F;
+    color: gray;
+    padding: 0;
+    margin: 0;
+}
+
+.project h4{
+    color: #F0F3F4;
+    margin: 0;
+    padding: 0;
+}
+
+.project h5{
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-size: medium;
+    font-style: normal;
+    color: gray;
+    line-height: 1.6;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.8;
+    color: gray;
+    padding: 0;
+    margin: 0;
+}
+
+.project a{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: small;
+    line-height: 1.6;
+    padding: 0;
+    color: #F0F3F4;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.project a :hover{
+    color: #AEEEEE;
+    text-decoration: underline;
+    text-decoration-color: #007BFF;
+}
+.project img{
+    padding: 20px 0;
+}
+
+.project ul
+{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.8;
+    padding: 0;
+    color:#AEEEEE;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.project li
+{
+    display: inline-block;
+    padding: 4px 5px;
+    background-color: darkslategray; /* Button background color */
+    color: #AEEEEE; /* Text color */
+    border-radius: 12px; /* Rounded corners */
+    border: none; /* No border */
+    text-align: center; /* Center text */
+    font-size: 14px; /* Adjust font size */
+    font-weight: 400;
+    /* margin-left: 1px; Add space between buttons */
+    margin-right: 3px;
+    margin-bottom: 10px;
+}
+
+.contact a{
+    color: #F0F3F4;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color:#001F3F;
+    color: #F0F3F4;
+} 
+
+@media screen and (max-width: 600px) {
+    div.container-body {
+        flex-direction: column; /* Stack sidebar and content vertically */
+    }
+    div.wrapper-sidebar {
+        width: 100%; /* Full width for sidebar */
+        height: auto; /* Adjust height to content */
+        position: relative; /* Remove fixed positioning */
+        top: 0; /* Reset top offset to ensure correct flow */
+        left: 0; /* Reset left offset */
+    }
+
+    div.wrapper-sidebar .topnav {
+     display: none;
+    }
+
+    div.wrapper-sidebar .hero {
+     display: block;
+    }
+
+    div.wrapper-content {
+        margin-left: 0; /* Remove offset */
+        width: 100%; 
+    }
+}
