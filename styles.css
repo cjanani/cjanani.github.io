@@ -445,12 +445,17 @@ footer {
     .skills-list {
         gap: 10px; /* Reduce gap for smaller screens */
     }
-    div.front {
-     display: none;
+    /* div.front {
+    display: none;
+    } */
+    div.flipbox:hover {
+    display: block;
+    transform: none;
+    transition: none;
     }
     div.back {
-     display: block;
-     transform: none;
-     transition: none;
+    display: block;
+    transform: none;
+    transition: none;
     }
 }
