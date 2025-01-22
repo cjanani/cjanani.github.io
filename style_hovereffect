@@ -1,0 +1,123 @@
+.skills-tech-list ul li{
+    /* background-color: darkslategray; Button background color */
+    color: #AEEEEE; /* Text color */
+    text-align: left; /* Center text */
+    font-size: 16px; /* Adjust font size */
+    font-weight: 400;
+    margin-bottom: 5px;
+    padding: 5px;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+
+.skills-tech-list ul li:hover
+{
+    box-shadow: inset 120px 0 0 0 #AEEEEE;
+    color: black;
+}
+
+
+<section class="skills-list" id="skills-list">
+            <h4>SKILLS</h4>
+            <div class="skills-tech-list">
+                <ol>
+                    <li>
+                    <h4>Languages & Frameworks</h4>
+                        <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>ES6/7</li>
+                        <li>SQL (MS-SQL)</li>
+                        <li>Perl Scripting</li>
+                        <li>React/Redux</li>
+                        <li>Node.js</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Tools</h4>
+                        <ul>
+                        <li>Git</li>
+                        <li>JIRA</li>
+                        <li>Trello</li>
+                        <li>ServiceNow</li>
+                        <li>Figma</li>
+                        </ul>                 
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+
+
+        section .skills-list{
+    padding: 0 10px;
+    margin: 0 20px;
+    text-align: left;
+    /* display: grid;
+    grid-template-rows: 1fr; */
+    /* display: flex; */
+
+}
+
+.skills-tech-list ol
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+
+} 
+
+.skills-tech-list ol li
+{
+    /* margin-left: 0;
+    padding: 0; */
+    text-align: left; /* Center text */
+    font-weight: 400;
+    font-style: bold;
+    padding: 0px;
+    margin-right: 20px;
+} 
+
+
+.skills-tech-list ul
+{ 
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-tech-list ul li{
+    /* background-color: darkslategray; Button background color */
+    color: #AEEEEE; /* Text color */
+    text-align: left; /* Center text */
+    font-size: 16px; /* Adjust font size */
+    font-weight: 400;
+    margin-bottom: 5px;
+    padding: 5px;
+    /* box-shadow: inset 0 0 0 0 #54b3d6;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out; */
+}
+
+
+/* .skills-tech-list ul li:hover
+{
+    box-shadow: inset 120px 0 0 0 #AEEEEE;
+    color: black;
+} */
+.skills-tech-list ol h4
+{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    background-color:#001F3F;
+    color: #F0F3F4;
+    margin: 0;
+    padding: 0;
+    /* margin-left: 3px; Add space between buttons */
+    /* margin-right: 3px;
+    margin-bottom: 5px; */
+}
+

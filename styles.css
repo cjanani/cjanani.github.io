@@ -4,7 +4,7 @@
     font-family: "Roboto", serif;
     font-weight: 300;
     /* font-style: normal; */
-    /* font-style: bold; */
+    font-size: 14px;
     line-height: 1.6;
     margin: 0px;
     padding: 0;
@@ -115,6 +115,82 @@ section .about{
 
 .about a:hover{
     color: #AEEEEE;
+}
+
+
+.skills-list {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+}
+
+.flipbox {
+    position: relative;
+    width: 50%;
+    height: auto; /* Adjust height for the tiles */
+    min-height: 200px; 
+    margin-bottom: 30px;
+    transform-style: preserve-3d;
+    transition: transform 2s ease; /* Smooth flip animation */
+}
+
+.flipbox:hover {
+    transform: rotateY(180deg); /* Flip on hover */
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 10px;
+    backface-visibility: hidden; /* Hide the backface when not visible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
+}
+
+.front {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: medium;
+    background-color:#001F3F;
+    color: white;
+}
+
+.back {
+    background-color:#AEEEEE;
+    transform: rotateY(180deg);
+    flex-direction: column;
+    /* padding: 10px; */
+}
+
+.back ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.back li {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: bold;
+    font-size: small;
+    margin: 5px 0;
+    padding: 2px;
+    background-color: #001F3F;;
+    border-radius: 5px;
+    color: #AEEEEE;
+    text-align: center;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
 section .experience{
@@ -282,8 +358,8 @@ div li {
 .project a{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-style: normal;
-    font-size: small;
+    font-style: bold;
+    /* font-size: small; */
     line-height: 1.6;
     padding: 0;
     color: #F0F3F4;
@@ -296,7 +372,7 @@ div li {
     text-decoration: underline;
     text-decoration-color: #007BFF;
 }
-.project img{
+.project .projectImage{
     padding: 20px 0;
 }
 
@@ -343,15 +419,15 @@ footer {
     div.container-body {
         display: flex;
         flex-direction: column; /* Stack sidebar and content vertically */
-        height: auto;
+        height: auto; /* Remove full viewport height constraint */
         overflow: visible;
     }
     div.wrapper-sidebar {
         width: 100%; /* Full width for sidebar */
-        height: auto; /* Adjust height to content */
+        height: min-content; /* Adjust height to content */
         position: relative; /* Remove fixed positioning */
         top: 0; /* Reset top offset to ensure correct flow */
-        left: 0; /* Reset left offset */
+        left: 0;  /* Reset left offset */
     }
 
     div.wrapper-sidebar .topnav {
@@ -365,5 +441,8 @@ footer {
     div.wrapper-content {
         margin-left: 0; /* Remove offset */
         width: 100%; 
+    }
+    .skills-list {
+        gap: 10px; /* Reduce gap for smaller screens */
     }
 }
