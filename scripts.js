@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     projects.forEach(project => {
         const projectDiv = document.createElement('div');
         projectDiv.classList.add('project');
+        projectDiv.style.marginBottom = '2rem';
         
         const projectLink = document.createElement('a');
         projectLink.href = project.link;
@@ -108,14 +109,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // projectImage.setAttribute('width', '300px');
         // projectDiv.appendChild(projectImage);
         
-        const projectUlist = document.createElement('ul');
-        // projectUlist.classList.add('skills');
-        project.skills.forEach(skill => {
-        const projectList = document.createElement('li');
-        projectList.innerHTML = skill;
-        projectUlist.appendChild(projectList);
-        projectDiv.appendChild(projectUlist);
-        });
+        // const projectUlist = document.createElement('ul');
+        // // projectUlist.classList.add('skills');
+        // project.skills.forEach(skill => {
+        // const projectList = document.createElement('li');
+        // projectList.innerHTML = skill;
+        // projectUlist.appendChild(projectList);
+        // projectDiv.appendChild(projectUlist);
+        // });
     
 
         projectSection.appendChild(projectDiv);

@@ -8,7 +8,8 @@
     line-height: 1.6;
     margin: 0px;
     padding: 0;
-    background-color:#001F3F;
+    /* background-color:#001F3F; */
+    overflow: auto;
 }
 
  .container-body {
@@ -17,13 +18,17 @@
     width: 100%; /* Ensure it spans the full width of the page */
     height: 100vh; /* Full viewport height for consistent layout */
     overflow: hidden;
-    background-color:#001F3F;
-    color: gray;
+    background-image: url('https://framerusercontent.com/images/3EmVyWTsuFBgtQOVW118OD0o2ow.svg');
+    background-size: cover;       /* or 'contain' depending on design intent */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* optional: for parallax-like effect */
+    color: white;
 }
 
 header {
-    background-color:#001F3F;
-    color: #F0F3F4;
+    /* background-color:#001F3F; */
+    color: white;
     text-align: start;
 }
 
@@ -41,10 +46,11 @@ header {
 { 
     margin-left: 650px;/* Offset by the sidebar width */
     margin-right: 50px;
+    margin-top: 20px;
     flex-grow: 1; /* Take up remaining space */
     padding: 20px;
-    overflow-y: auto; /* Enable vertical scrolling */
-    height: 100%; /* Full height to allow proper scrolling */
+    height: 100vh;
+    overflow-y: auto; /* Full height to allow proper scrolling */
     /* background-color: #fff; Optional: visual distinction */
 }
 
@@ -55,7 +61,8 @@ header {
     align-items: flex-start;
     font-weight: 400;
     font-style: bold;
-    color: #F0F3F4;
+    color: white;
+    margin-top: 10px;
 }
 
 .topnav a{
@@ -63,20 +70,20 @@ header {
 }
 
 .topnav a:hover{
-    color: #AEEEEE;
+    color: #4d8cff;
     text-decoration: underline;
-    text-decoration-color: #007BFF;
+    text-decoration-color: #4d8cff;
 }
 
 .hero p{
-      color: gray;
+      color: white;
 }
 /* nav ul li {
     margin: 0;
 } */
 
 nav ul li a {
-    color: #F0F3F4;
+    color: #4d8cff;
     text-decoration:#F0F3F4 underline;
 
 }
@@ -86,8 +93,8 @@ h1
     font-family: "Roboto", sans-serif;
     font-weight: 800;
     font-style: bold;
-    background-color:#001F3F;
-    color: #F0F3F4;
+    /* background-color:#001F3F; */
+    color: #4d8cff;
 }
 
 h2, h3, h4, h5
@@ -95,8 +102,8 @@ h2, h3, h4, h5
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: bold;
-    background-color:#001F3F;
-    color: #F0F3F4;
+    /* background-color:#001F3F; */
+    color: #4d8cff;
 }
 
 section .about{
@@ -109,12 +116,12 @@ section .about{
 .about a{
     font-weight: 400;
     font-style: bold;
-    color: #F0F3F4;
+    color: white;
     text-decoration: none;
 }
 
 .about a:hover{
-    color: #AEEEEE;
+    color: white;
 }
 
 
@@ -160,12 +167,12 @@ section .about{
     font-weight: 400;
     font-style: bold;
     font-size: medium;
-    background-color:#001F3F;
+    /* background-color:#001F3F; */
     color: white;
 }
 
 .back {
-    background-color:#AEEEEE;
+    /* background-color:#4d8cff; */
     transform: rotateY(180deg);
     flex-direction: column;
     /* padding: 10px; */
@@ -186,9 +193,9 @@ section .about{
     font-size: small;
     margin: 5px 0;
     padding: 2px;
-    background-color: #001F3F;;
+    /* background-color: #001F3F;; */
     border-radius: 5px;
-    color: #AEEEEE;
+    color: white;
     text-align: center;
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
@@ -211,7 +218,7 @@ ol{
     font-weight: 400;
     font-style: bold;
     font-size: small;
-    color: gray;
+    color: white;
     margin-top: 2px;
 }
 
@@ -226,7 +233,7 @@ ol{
     font-style: normal;
     font-size: 14px;
     line-height: 1.8;
-    color: gray;
+    color: white;
 
 }
 
@@ -256,7 +263,7 @@ ol{
     font-size: 14px;
     line-height: 1.8;
     padding: 0;
-    color:#AEEEEE;
+    color:#4d8cff;
     list-style-type: none;
 }
 
@@ -320,14 +327,14 @@ div li {
 .project {
     display: flex;
     flex-direction: column;
-    background-color:#001F3F;
-    color: gray;
+    /* background-color:#001F3F; */
+    color: white;
     padding: 0;
     margin: 0;
 }
 
 .project h4{
-    color: #F0F3F4;
+    color: #AEEEEE;
     margin: 0;
     padding: 0;
 }
@@ -337,7 +344,7 @@ div li {
     font-weight: 300;
     font-size: medium;
     font-style: normal;
-    color: gray;
+    color: white;
     line-height: 1.6;
     padding: 0;
     margin-top: 0;
@@ -350,9 +357,10 @@ div li {
     font-style: normal;
     font-size: 14px;
     line-height: 1.8;
-    color: gray;
+    color: white;
     padding: 0;
     margin: 0;
+    margin-bottom: 5px;
 }
 
 .project a{
@@ -362,7 +370,7 @@ div li {
     /* font-size: small; */
     line-height: 1.6;
     padding: 0;
-    color: #F0F3F4;
+    color: white;
     text-decoration: none;
     margin-bottom: 5px;
 }
@@ -370,7 +378,7 @@ div li {
 .project a :hover{
     color: #AEEEEE;
     text-decoration: underline;
-    text-decoration-color: #007BFF;
+    text-decoration-color: #4d8cff;
 }
 .project .projectImage{
     padding: 20px 0;
@@ -384,7 +392,7 @@ div li {
     font-size: 14px;
     line-height: 1.8;
     padding: 0;
-    color:#AEEEEE;
+    color:#4d8cff;
     list-style-type: none;
     margin-bottom: 10px;
 }
@@ -394,7 +402,7 @@ div li {
     display: inline-block;
     padding: 4px 5px;
     background-color: darkslategray; /* Button background color */
-    color: #AEEEEE; /* Text color */
+    color: #4d8cff; /* Text color */
     border-radius: 12px; /* Rounded corners */
     border: none; /* No border */
     text-align: center; /* Center text */
@@ -408,12 +416,14 @@ div li {
 .contact a{
     color: #F0F3F4;
 }
-footer {
+.contact {
+  padding-bottom: 50px;
+}
+/* footer {
     text-align: center;
     padding: 10px 0;
-    background-color:#001F3F;
-    color: #F0F3F4;
-} 
+    color: #4d8cff;
+}  */
 
 @media screen and (max-width: 600px) {
     div.container-body {
@@ -444,18 +454,5 @@ footer {
     }
     .skills-list {
         gap: 10px; /* Reduce gap for smaller screens */
-    }
-    /* div.front {
-    display: none;
-    } */
-    div.flipbox:hover {
-    display: block;
-    transform: none;
-    transition: none;
-    }
-    div.back {
-    display: block;
-    transform: none;
-    transition: none;
     }
 }
