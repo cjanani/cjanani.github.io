@@ -426,33 +426,58 @@ div li {
 }  */
 
 @media screen and (max-width: 600px) {
-    div.container-body {
-        display: flex;
-        flex-direction: column; /* Stack sidebar and content vertically */
-        height: auto; /* Remove full viewport height constraint */
+    .container-body {
+        flex-direction: column;
+        height: auto;
         overflow: visible;
     }
-    div.wrapper-sidebar {
-        width: 100%; /* Full width for sidebar */
-        height: min-content; /* Adjust height to content */
-        position: relative; /* Remove fixed positioning */
-        top: 0; /* Reset top offset to ensure correct flow */
-        left: 0;  /* Reset left offset */
+
+    .wrapper-sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        box-shadow: none;
     }
 
-    div.wrapper-sidebar .topnav {
-     display: none;
+    .wrapper-sidebar .topnav {
+        display: none; /* Optional: Add a mobile hamburger menu here */
     }
 
-    div.wrapper-sidebar .hero {
-     display: block;
+    .wrapper-content {
+        margin: 0;
+        width: 100%;
+        padding: 10px;
     }
 
-    div.wrapper-content {
-        margin-left: 0; /* Remove offset */
-        width: 100%; 
-    }
     .skills-list {
-        gap: 10px; /* Reduce gap for smaller screens */
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .flipbox {
+        width: 100%; /* full width */
+        min-height: 180px;
+    }
+
+    .work-exp-header {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2, h3, h4, h5 {
+        font-size: 1.2em;
+    }
+
+    .project ul li, .work-exp-info li {
+        font-size: 12px;
+        padding: 3px 6px;
     }
 }
